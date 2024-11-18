@@ -1,11 +1,11 @@
-import quantumLogo from "@/assets/images/quantum.svg";
-import acmeLogo from "@/assets/images/acme-corp.svg";
-import echoValleyLogo from "@/assets/images/echo-valley.svg";
-import pulseLogo from "@/assets/images/pulse.svg";
-import outsideLogo from "@/assets/images/outside.svg";
-import apexLogo from "@/assets/images/apex.svg";
-import celestialLogo from "@/assets/images/celestial.svg";
-import twiceLogo from "@/assets/images/twice.svg";
+// import quantumLogo from "@/assets/images/quantum.svg";
+// import acmeLogo from "@/assets/images/acme-corp.svg";
+// import echoValleyLogo from "@/assets/images/echo-valley.svg";
+// import pulseLogo from "@/assets/images/pulse.svg";
+// import outsideLogo from "@/assets/images/outside.svg";
+// import apexLogo from "@/assets/images/apex.svg";
+// import celestialLogo from "@/assets/images/celestial.svg";
+// import twiceLogo from "@/assets/images/twice.svg";
 
 // const logos = [
 //     { name: "Quantum", image: quantumLogo },
