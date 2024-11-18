@@ -7,16 +7,16 @@ import apexLogo from "@/assets/images/apex.svg";
 import celestialLogo from "@/assets/images/celestial.svg";
 import twiceLogo from "@/assets/images/twice.svg";
 
-const logos = [
-    { name: "Quantum", image: quantumLogo },
-    { name: "Acme Corp", image: acmeLogo },
-    { name: "Echo Valley", image: echoValleyLogo },
-    { name: "Pulse", image: pulseLogo },
-    { name: "Outside", image: outsideLogo },
-    { name: "Apex", image: apexLogo },
-    { name: "Celestial", image: celestialLogo },
-    { name: "Twice", image: twiceLogo },
-];
+// const logos = [
+//     { name: "Quantum", image: quantumLogo },
+//     { name: "Acme Corp", image: acmeLogo },
+//     { name: "Echo Valley", image: echoValleyLogo },
+//     { name: "Pulse", image: pulseLogo },
+//     { name: "Outside", image: outsideLogo },
+//     { name: "Apex", image: apexLogo },
+//     { name: "Celestial", image: celestialLogo },
+//     { name: "Twice", image: twiceLogo },
+// ];
 
 export default function LogoTicker() {
     return <div>Logo Ticker</div>;
