@@ -29,7 +29,7 @@ export default function Hero() {
                     Impactful design, created effortlessly
                 </h1>
                 <p className="text-center text-xl text-white/50 mt-8 max-w-2xl mx-auto">
-                    Design tools shouldn't slow you down. Layers combine
+                    Design tools shouldn&apos;t slow you down. Layers combine
                     powerful features with an intuitive interface that in your
                     creative flow.
                 </p>
