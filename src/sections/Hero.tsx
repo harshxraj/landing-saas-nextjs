@@ -15,10 +15,10 @@ export default function Hero() {
                     <Image src={design2} alt="design2" />
                 </div>
                 <div className="absolute left-56 top-96 hidden lg:block">
-                    <Pointer name="Andrea"/>
+                    <Pointer name="Andrea" />
                 </div>
                 <div className="absolute right-80 -top-5 hidden lg:block">
-                    <Pointer name="Bryan" color="red"/>
+                    <Pointer name="Bryan" color="red" />
                 </div>
                 <div className="flex justify-center">
                     <div className="inline-flex py-1 px-3 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full text-neutral-950 font-semibold">
@@ -37,7 +37,7 @@ export default function Hero() {
                     <input
                         type="email"
                         placeholder="Enter your email"
-                        className="bg-transparent px-4 md:flex-1 focus:outline-none"
+                        className="bg-transparent px-4 md:flex-1 focus:outline-none w-full"
                     />
                     <Button
                         type="submit"
