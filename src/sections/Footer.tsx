@@ -21,6 +21,7 @@ export default function Footer() {
                                 <a
                                     className="text-sm text-white/50"
                                     href={link.href}
+                                    key={link.label}
                                 >
                                     {link.label}
                                 </a>
