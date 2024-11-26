@@ -12,7 +12,7 @@ export default function Introduction() {
     const scrollTarget = useRef(null);
     const { scrollYProgress } = useScroll({
         target: scrollTarget,
-        offset: ["start end", "end start"],
+        offset: ["start end", "end end"],
     });
 
     const [currentWord, setCurrentWord] = useState(0);
