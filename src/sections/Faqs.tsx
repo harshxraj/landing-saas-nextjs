@@ -1,4 +1,8 @@
+"use client";
+
 import Tag from "@/components/Tag";
+import { motion, AnimatePresence } from "framer-motion";
+import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 
 const faqs = [
@@ -25,7 +29,14 @@ const faqs = [
 ];
 
 export default function Faqs() {
-    const selectedIndex = 0;
+    const [selectedIndex, setSelectedIndex] = useState<number | null>(0);
+
+    const handleSelectedIndex = (index: number) => {
+        if (index === selectedIndex) {
+            return setSelectedIndex(null);
+        }
+        setSelectedIndex(index);
+    };
     return (
         <section className="py-24">
             <div className="container">
@@ -36,11 +47,12 @@ export default function Faqs() {
                     Questions? We&apos;ve got{" "}
                     <span className="text-lime-400">answers</span>
                 </h2>
-                <div className="mt-12 flex flex-col gap-6 max-w-xl mx-auto">
+                <div className="mt-12 flex flex-col gap-6 max-w-xl mx-auto ">
                     {faqs.map((faq, index) => (
                         <div
                             key={faq.question}
-                            className="bg-neutral-900 rounded-2xl border border-white/10 p-6"
+                            className="bg-neutral-900 rounded-2xl border border-white/10 p-6 hover:cursor-pointer"
+                            onClick={() => handleSelectedIndex(index)}
                         >
                             <div className="flex justify-between items-center">
                                 <h3 className="font-medium">{faq.question}</h3>
@@ -55,7 +67,7 @@ export default function Faqs() {
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
                                     className={twMerge(
-                                        "feather feather-plus text-lime-400 flex-shrink-0",
+                                        "feather feather-plus text-lime-400 flex-shrink-0 transition duration-300",
                                         selectedIndex === index && "rotate-45"
                                     )}
                                 >
@@ -63,14 +75,29 @@ export default function Faqs() {
                                     <line x1="5" y1="12" x2="19" y2="12"></line>
                                 </svg>
                             </div>
-                            <div
-                                className={twMerge(
-                                    "mt-6",
-                                    selectedIndex !== index && "hidden"
+                            <AnimatePresence>
+                                {selectedIndex === index && (
+                                    <motion.div
+                                        initial={{
+                                            height: 0,
+                                            marginTop: 0,
+                                        }}
+                                        animate={{
+                                            height: "auto",
+                                            marginTop: 24,
+                                        }}
+                                        exit={{
+                                            height: 0,
+                                            marginTop: 0,
+                                        }}
+                                        className={twMerge("overflow-hidden")}
+                                    >
+                                        <p className="text-white/50">
+                                            {faq.answer}
+                                        </p>
+                                    </motion.div>
                                 )}
-                            >
-                                <p className="text-white/50">{faq.answer}</p>
-                            </div>
+                            </AnimatePresence>
                         </div>
                     ))}
                 </div>
