@@ -67,14 +67,14 @@ export default function Hero() {
                     ref={leftDesignScope}
                     initial={{ opacity: 0, y: 100, x: -100 }}
                     drag
-                    className="absolute -left-32 top-16 hidden lg:block"
+                    className="absolute -left-32 top-16 hidden lg:block z-40"
                 >
                     <Image src={design1} alt="design1" draggable="false" />
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0, y: 100, x: -200 }}
                     ref={leftPointerScope}
-                    className="absolute left-56 top-96 hidden lg:block"
+                    className="absolute left-56 top-96 hidden lg:block z-40"
                 >
                     <Pointer name="Andrea" />
                 </motion.div>
