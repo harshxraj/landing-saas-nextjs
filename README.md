@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Design Tool SaaS Landing Page
 
-## Getting Started
+Welcome to the Stunning SaaS Landing Page project! Built with React, Next.js, TailwindCSS, and Framer Motion, this high-performance landing page combines modern design with smooth animations, offering a visually appealing and responsive solution for showcasing your SaaS product.
 
-First, run the development server:
+## Table of Contents
+
+- [Demo](#demo)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Preview](#preview)
+
+## Demo
+Check out the live demo of the project [here](https://landing-saas-nextjs.vercel.app/).
+
+## Features
+- Responsive design
+- Smooth animations with Framer Motion
+- Modern UI with TailwindCSS
+- Server-side rendering with Next.js
+- Easy to customize
+
+## Technologies Used
+- **React**: A JavaScript library for building user interfaces
+- **Next.js**: A React framework with server-side rendering capabilities
+- **TailwindCSS**: A utility-first CSS framework for rapid UI development
+- **Framer Motion**: A library for creating animations in React
+
+## Installation
+To get started with this project, clone the repository and install the dependencies:
+
+```bash
+git clone git@github.com:harshxraj/landing-saas-nextjs.git
+cd landing-saas-nextjs
+npm install
+```
+
+## Usage
+To start the development server, run:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the project.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Preview
+![screenshot](https://github.com/user-attachments/assets/e6be91b3-0d08-4f09-b837-83139736acf1)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
